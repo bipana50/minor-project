@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.AddBookFromStore"
+        android:orientation="vertical">
+
+        <include layout="@layout/navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <EditText
+                android:id="@+id/bs_add_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/book_title"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/bs_add_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/author"
+                android:inputType="text"/>
+
+
+            <TextView
+                android:id="@+id/bs_text_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="@string/select_genre"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/bs_spinner_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:visibility="visible"/>
+
+                <EditText
+                    android:id="@+id/bs_add_number_piece"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:inputType="number"
+                    android:hint="Number of pieces *"/>
+
+                <EditText
+                android:id="@+id/bs_add_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:ems="10"
+                android:hint="Cost of one piece (book) *"
+                android:inputType="number"/>
+
+                <Button
+                    android:id="@+id/bs_add_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:background="@color/colorAccent"
+                    android:textColor="@android:color/white"
+                    android:text="ADD ITEM"/>
+
+        </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>

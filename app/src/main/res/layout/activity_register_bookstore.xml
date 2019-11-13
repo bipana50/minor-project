@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.RegisterBookstore"
+        android:orientation="vertical">
+
+        <include layout="@layout/navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <EditText
+            android:id="@+id/enterBookstoreName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="textPersonName"
+            android:hint="@string/bookstore_name"
+            android:layout_alignParentStart="true"/>
+
+        <EditText
+            android:id="@+id/enterBookstorePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enterBookstoreName"
+            android:inputType="phone"
+            android:hint="@string/phone_number"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:layout_below="@id/enterBookstorePhone"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

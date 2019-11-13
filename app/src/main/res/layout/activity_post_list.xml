@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="com.example.dell.firebaseintro.Activity.PostListActivity"
+android:id="@+id/drawer_layout_1"
+android:layout_height="match_parent"
+android:layout_width="match_parent"
+android:fitsSystemWindows="true">
+
+
+<android.support.v7.widget.FitWindowsFrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame_layout_1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include layout="@layout/navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+</android.support.v7.widget.FitWindowsFrameLayout>
+
+<android.support.design.widget.NavigationView
+    android:id="@+id/nav_view_1"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:menu="@menu/navigation_menu"
+    android:layout_gravity="start"
+    app:headerLayout="@layout/header_layout_nav_bar">
+
+</android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+

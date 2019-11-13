@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Pustak</string>
+    <string name="email">Gmail address</string>
+    <string name="login">Sign In</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="passwordHint">Password</string>
+    <string name="book_title">Book Title *</string>
+    <string name="add_book">Add Book</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="title_activity_add_book">AddBookActivity</string>
+    <string name="author">Author *</string>
+    <string name="tap_on_the_camera_icon_to_add_photo"> &#60;&#60; Tap on the icon to add photo</string>
+    <string name="enter_cost_in_rs">Enter cost in Rs. *</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="select_condition">Select Condition</string>
+    <string name="select_genre">Select Genre</string>
+    <string name="my_added_books">My Added Books</string>
+    <string name="search">Search Book</string>
+    <string name="view_profile">View Profile</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="home">Home</string>
+
+    <string-array name="spinner_condition">
+        <item>Brand New</item>
+        <item>Used</item>
+    </string-array>
+
+    <string-array name="spinner_genre">
+        <item>Science fiction</item>
+        <item>Drama</item>
+        <item>Romance</item>
+        <item>Action / Adventure</item>
+        <item>Satire</item>
+        <item>Horror</item>
+        <item>Travel</item>
+        <item>Children's</item>
+        <item>Religious / Spiritual</item>
+        <item>Academic</item>
+        <item>History</item>
+        <item>Comic</item>
+        <item>Tragedy</item>
+        <item>Fantasy</item>
+        <item>Comedy</item>
+        <item>Mystery</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_added_books">AddedBooksActivity</string>
+    <string name="provide_detail">Please provide the following details..</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="bookstore_name">Enter Bookstore Name</string>
+    <string name="next">NEXT</string>
+    <string name="title_activity_register_store_map">Map</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

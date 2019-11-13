@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CreateAccountActivity"
+    tools:layout_editor_absoluteY="25dp"
+    android:padding="8dp">
+
+    <EditText
+        android:id="@+id/createFirstNameID"
+        android:layout_below="@id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/first_name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="130dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_below="@id/createFirstNameID"
+        android:id="@+id/createLastNameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/last_name"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <EditText
+        android:layout_below="@id/createLastNameID"
+        android:id="@+id/createEmailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <EditText
+        android:layout_below="@id/createPhoneNumberID"
+        android:id="@+id/createPasswordID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/passwordHint"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <Button
+        android:layout_below="@id/re_password"
+        android:id="@+id/createAccID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/create_new_account"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_marginTop="30dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="638dp" />
+
+    <EditText
+        android:layout_below="@id/createEmailID"
+        android:id="@+id/createPhoneNumberID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="@string/provide_detail"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <EditText
+        android:layout_below="@id/createPasswordID"
+        android:id="@+id/re_password"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    </RelativeLayout>
+</LinearLayout>

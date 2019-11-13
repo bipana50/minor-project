@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_marginBottom="8dp"
+android:background="@android:color/darker_gray"
+app:cardCornerRadius="4dp"
+app:cardElevation="4dp">
+
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/store_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="5dp">
+
+        <TextView
+            android:id="@+id/bookTitleList3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="@string/book_title"
+            android:textColor="#2c2c2d"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bookAuthorList3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="Author"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/bookGenreList3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="Genre "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/bookPieceList3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="Number of pieces "
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/bookPriceList3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="Price"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignBottom="@id/store_linear_layout"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/editStoreBook"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:background="#ffffff"
+            android:src="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/deleteStoreBook"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@android:drawable/ic_delete"
+            android:background="#ffffff"
+            android:padding="5dp"
+            />
+
+
+    </TableRow>
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

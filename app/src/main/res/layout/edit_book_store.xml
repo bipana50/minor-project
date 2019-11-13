@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="23dp">
+
+        <TextView
+        android:id="@+id/d_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_semibold"
+            android:layout_marginBottom="20dp"
+        android:text="@string/book_title"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Pieces : "
+                android:textSize="18sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <EditText
+                android:layout_marginStart="8dp"
+                android:id="@+id/d_edit_pieces"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Cost per book : "
+                android:textSize="18sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <EditText
+                android:id="@+id/d_edit_price"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:text="0"
+                android:inputType="number"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/d_edit_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="EDIT ITEM"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_marginRight="4dp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorAccent"/>
+
+            <Button
+                android:id="@+id/d_dismiss_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="CANCEL"
+                android:textSize="16sp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:background="@color/colorAccent"/>
+
+
+        </TableRow>
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>

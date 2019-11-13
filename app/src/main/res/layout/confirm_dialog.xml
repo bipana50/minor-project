@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:padding="23dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textAlert"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+
+                android:paddingTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="Do you want to DELETE this book from your selling list ?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/noButton"
+                android:background="@color/colorAccent"
+                android:text="@string/no"
+                android:layout_marginTop="19dp"
+                android:layout_below="@id/textAlert"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/yesButton"
+                android:layout_alignParentRight="true"
+                android:text="@string/yes"
+                android:background="@color/colorAccent"
+                android:layout_alignBottom="@id/noButton"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
